@@ -2303,14 +2303,17 @@
                     publishedHR: 0.92, hrLCI: 0.86, hrUCI: 0.99,
                     allOutcomes: [
                         { shortLabel: 'CV Death or HF Event', title: 'First HF event (hospitalization or urgent visit) or CV death', tE: 1523, cE: 1607, type: 'PRIMARY', pubHR: 0.92, pubHR_LCI: 0.86, pubHR_UCI: 0.99 },
-                        { shortLabel: 'CV Death', title: 'Death from cardiovascular causes', tE: 808, cE: 798, type: 'SECONDARY', pubHR: 1.01, pubHR_LCI: 0.92, pubHR_UCI: 1.11 }
+                        { shortLabel: 'CV Death', title: 'Death from cardiovascular causes', tE: 808, cE: 798, type: 'SECONDARY', pubHR: 1.01, pubHR_LCI: 0.92, pubHR_UCI: 1.11 },
+                        { shortLabel: 'ACM', title: 'All-cause mortality', tE: 1067, cE: 1065, type: 'SECONDARY', pubHR: 1.0, pubHR_LCI: 0.92, pubHR_UCI: 1.09 },
+                        { shortLabel: 'First HF Hosp', title: 'First heart failure hospitalization', tE: 909, cE: 1004, type: 'SECONDARY', pubHR: 0.87, pubHR_LCI: 0.8, pubHR_UCI: 0.95 }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'low'],
-                    snippet: 'Teerlink JR et al. N Engl J Med 2021;384:105-116. PMID:33185990.',
+                    snippet: 'Source: ClinicalTrials.gov NCT02929329 (GALACTIC-HF). Enrollment: 8256. Status: COMPLETED. Results posted. Primary: CV death or first HF event. Teerlink et al. NEJM 2021;384:105-116.',
                     evidence: [
                         { label: 'Enrollment & Randomization', source: 'Teerlink JR et al. N Engl J Med 2021;384:105-116 (PMID:33185990)', text: '8,256 patients (inpatients and outpatients) with symptomatic chronic HF and LVEF <=35% randomized to omecamtiv mecarbil (PK-guided doses of 25mg, 37.5mg, or 50mg twice daily) or placebo, in addition to standard HF therapy. Enrolled at 1,033 sites in 35 countries.', highlights: ['8,256', 'LVEF <=35%', '1,033 sites', '35 countries'] },
                         { label: 'Primary Outcome', source: 'Teerlink JR et al. N Engl J Med 2021;384:105-116 (PMID:33185990)', text: 'During median 21.8 months, primary outcome (first HF event or CV death) occurred in 1,523/4,120 (37.0%) omecamtiv mecarbil vs 1,607/4,112 (39.1%) placebo. HR 0.92 (95% CI 0.86-0.99, P=0.03). Absolute risk reduction 2.1 percentage points.', highlights: ['1,523', '1,607', 'HR 0.92', 'P=0.03', '2.1%'] },
                         { label: 'CV Death (No Benefit)', source: 'Teerlink JR et al. N Engl J Med 2021;384:105-116', text: 'CV death occurred in 808/4,120 (19.6%) omecamtiv mecarbil vs 798/4,112 (19.4%) placebo: HR 1.01 (95% CI 0.92-1.11). No significant difference. KCCQ clinical summary score change was also not significantly different between groups.', highlights: ['808', '798', 'HR 1.01', 'not significant'] },
+                        { label: 'Additional Component Outcomes', source: 'Teerlink JR et al. N Engl J Med 2021;384:105-116, Suppl Table S3', text: 'All-cause mortality: OM 1067/4120 (25.9%) vs placebo 1065/4112 (25.9%), HR 1.00 (0.92-1.09). First HF hospitalization: OM 909/4120 vs placebo 1004/4112, HR 0.87 (0.80-0.95). Benefit driven by HF hospitalization reduction rather than mortality.', highlights: ['1067', '1065', 'HR 1.00', '909', '1004', 'HR 0.87'] },
                         { label: 'Safety', source: 'Teerlink JR et al. N Engl J Med 2021;384:105-116', text: 'Adverse events and serious adverse events were similar between groups. No excess ischemic events (a prior theoretical concern). Troponin I levels increased modestly. Well tolerated with favorable safety profile.', highlights: ['similar', 'no excess ischemic events', 'well tolerated'] },
                         { label: 'Cross-MA Validation', source: 'Published MA: Alqatati F et al. Indian Heart J 2022;74:155-162 (PMID:35301008)', text: 'Systematic review and MA of 8 RCTs: Omecamtiv mecarbil not associated with increased death, adverse events, hypotension, or ventricular tachyarrhythmia vs placebo. Limited efficacy data suggest possible improvement in LVEF and systolic function. Our GALACTIC-HF data concordant with safety profile. Concordance: PASS.', highlights: ['8 RCTs', 'not associated', 'safe', 'PASS'] }
                     ]
@@ -2320,10 +2323,12 @@
                     tE: 9, tN: 185, cE: 4, cN: 91, group: 'HFrEF (Exercise)',
                     allOutcomes: [
                         { shortLabel: 'Peak VO2 Change', title: 'Change in peak VO2 from baseline to week 20 (NEGATIVE)', tE: 0, cE: 0, type: 'PRIMARY' },
-                        { shortLabel: 'HF Events', title: 'Heart failure events during 20-week study period', tE: 9, cE: 4, type: 'SECONDARY' }
+                        { shortLabel: 'HF Events', title: 'Heart failure events during 20-week study period', tE: 9, cE: 4, type: 'SECONDARY' },
+                        { shortLabel: 'VE/VCO2 Slope', title: 'Change in ventilatory efficiency (VE/VCO2 slope) at week 20 (NEGATIVE)', tE: 0, cE: 0, type: 'SECONDARY' },
+                        { shortLabel: 'Daily Activity', title: 'Change in daily step count (accelerometry) at week 20 (NEGATIVE)', tE: 0, cE: 0, type: 'SECONDARY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'low'],
-                    snippet: 'Lewis GD et al. JAMA 2022;328:259-269. PMID:35852527. NEGATIVE: no improvement in peak VO2.',
+                    snippet: 'Source: ClinicalTrials.gov NCT03759392 (METEORIC-HF). Enrollment: 276. Status: COMPLETED. Results posted. Primary: peak VO2 change at wk 20. NEGATIVE. Lewis et al. JAMA 2022;328:259-269.',
                     evidence: [
                         { label: 'Enrollment & Randomization', source: 'Lewis GD et al. JAMA 2022;328:259-269 (PMID:35852527)', text: '276 patients with HFrEF (LVEF <=35%), NYHA II-III, NT-proBNP >=200 pg/mL, and peak VO2 <=75% predicted, randomized 2:1 to omecamtiv mecarbil (n=185) or placebo (n=91) for 20 weeks at 63 sites. Median age 64, 15% female.', highlights: ['276', '2:1', '185', '91', '20 weeks'] },
                         { label: 'Primary Outcome (NEGATIVE)', source: 'Lewis GD et al. JAMA 2022;328:259-269 (PMID:35852527)', text: 'Peak VO2 change did NOT differ significantly: omecamtiv mecarbil -0.24 mL/kg/min vs placebo +0.21 mL/kg/min (LS mean difference -0.45, 95% CI -1.02 to 0.13, P=0.13). No improvement in total workload, ventilatory efficiency, or daily physical activity.', highlights: ['-0.45', 'P=0.13', 'NOT differ', 'NEGATIVE'] },
