@@ -37,3 +37,9 @@ yarn-error.log*
 
 # --- Session checkpoints (may contain local paths/state) ---
 PROGRESS.md
+
+# --- Sentinel scan output ---
+sentinel-findings.md
+sentinel-findings.jsonl
+STUCK_FAILURES.md
+STUCK_FAILURES.jsonl

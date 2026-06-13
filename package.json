@@ -1,0 +1,10 @@
+{
+  "name": "omecamtiv-livingmeta",
+  "version": "16.0.0",
+  "private": true,
+  "description": "Omecamtiv Mecarbil in Heart Failure: living meta-analysis dashboard (RapidMeta engine).",
+  "scripts": {
+    "test": "node --test tests/smoke.test.mjs"
+  },
+  "license": "MIT"
+}
